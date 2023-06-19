@@ -1,0 +1,24 @@
+server:
+  port: 9100
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/people?useSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+app-service:
+  roleStudent: ROLE_STUDENT
+  roleEmployee: ROLE_EMPLOYEE
+  message: You are not authorized to do this!
+  message2: has been deleted.
+login-service:
+  message: Welcome, student
+  message2: Welcome. employee
+  message3: You are not authorized to do this!
+admin:
+  person:
+    userName: admin
+    password: admin
+    authorities: ROLE_ADMIN, ROLE_EMPLOYEE
